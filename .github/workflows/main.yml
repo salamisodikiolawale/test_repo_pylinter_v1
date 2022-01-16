@@ -16,6 +16,7 @@ jobs:
         mypy-flags: ''
         fail-on-isort: false
 
+      #L outil isort facilite l'integration continue, il ne bloc pas le commit, il corrige automatique, on peut commenter les lignes du bas mais si erreur il faut corriger sinon commit bloquer
     - name: commit isort changes
       run: |
         git config --local user.email "action@github.com"
